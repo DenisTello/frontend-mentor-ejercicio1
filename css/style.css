@@ -1,0 +1,166 @@
+body{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.background{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #0c192c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: #15273f;
+    border-radius: 16px;
+    width: 350px;
+    height: 550px;
+    box-shadow: -1px -1px 6px 0 rgb(12, 23, 41), 4px 4px 16px 2px rgb(12, 23, 41);
+}
+
+.image{
+    margin-top: 25px;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+.title{
+    width: 300px;
+    color: #ffffff;
+    margin-bottom: 0;
+    transition: .1;
+}
+
+.description{
+    width: 300px;
+    color: #8ba2c2;
+    margin-bottom: 0;
+}
+
+.crypto{
+    display: flex;
+    width: 300px;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.ETH{
+    display: flex;
+    color: #46c4d0;
+}
+
+.ETH-icon{
+    margin-right: 10px;
+}
+
+.times{
+    display: flex;
+    color: #8ba2c2;
+}
+
+.times-icon{
+    margin-right: 10px;
+}
+
+.line{
+    background-color: #2f4159;
+    width: 300px;
+    height: 1px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    width: 300px;
+}
+
+.profile-img{
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    border: solid 1px #ffffff;
+    border-radius: 50%;
+}
+
+.profile-text{
+    color: #8ba2c2;
+    font-weight: bolder;
+}
+
+.autor{
+    margin-left: 5px;
+    color: #ffffff;
+    transition: .1;
+}
+
+.img-hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 25px;
+    width: 300px;
+    height: 300px;
+    transition: .5s;
+}
+
+.fa-solid, .fa-eye{
+    scale: 2.5;
+    color: transparent;
+}
+
+#eyes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    transition: .1s;
+}
+
+@media (hover: hover) {
+    .autor:hover{
+        color: #17bbc7;
+        transition: .5s;
+        cursor: pointer;
+    }
+}
+
+button:active{
+    transition: .5s;
+    color: #17bbc7;
+    cursor: pointer;
+}
+
+@media (hover: hover) {
+    .title:hover{
+        color: #17bbc7;
+        transition: .5s;
+        cursor: pointer;
+    }
+}
+
+@media (hover: hover) {
+    .img-hover:hover #eyes{
+        transition: .5s;
+        color: #fff;
+        background-color: #17bbc7;
+        opacity: 70%;
+        cursor: pointer;
+    }
+}
